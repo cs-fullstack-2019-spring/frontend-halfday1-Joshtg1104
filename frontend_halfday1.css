@@ -1,0 +1,75 @@
+#container{
+    margin: 5% 10% 10%;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 2fr 5fr 1fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "button1 content button2"
+    "section1 section2 section3"
+    "footer footer footer";
+}
+/*assigns grid positions and size, as well as margins*/
+header{
+    grid-area: header;
+    text-align: center;
+    margin-top: 9%;
+    font-size: 20px;
+}
+#player1{
+    grid-area: button1;
+    text-align: center;
+
+}
+article{
+    grid-area: content;
+    text-align: center;
+}
+#player2{
+    grid-area: button2;
+    text-align: center;
+}
+#section1{
+    grid-area: section1;
+    text-align: right;
+}
+#section2{
+    grid-area: section2;
+    text-align: center;
+}
+#section3{
+    grid-area: section3;
+    text-align: center;
+}
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+#p1{
+    font-size: 50px;
+    margin-bottom: 10%;
+ }
+#score1{
+    font-size: 85px;
+}
+#p2{
+    font-size: 50px;
+    margin-bottom: 10%;
+}
+#score2{
+    font-size: 85px;
+}
+/*creates a border around these areas of the grid*/
+#player1,article,#player2,#section2,#section3{
+    border: 1px solid grey;
+}
+/*classes for the various background color changing buttons*/
+.redBackground{
+    background: red;
+}
+.blueBackground{
+    background: blue;
+}
+.yellowBackground{
+    background: yellow;
+}

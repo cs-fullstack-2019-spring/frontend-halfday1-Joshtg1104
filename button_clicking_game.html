@@ -1,0 +1,63 @@
+<!--### Button Clicking Game-->
+<!--Create a two player game similar to the image attached.-->
+<!--When one player takes the lead, show that in the middle area.-->
+<!--You should also give them the option to choose the type of play style (keyboard or mouse),-->
+<!--and give them the option to toggle the background color in the game.-->
+<!--<hr>-->
+<!--If you need more help use the steps below:-->
+<!--1) Create an HTML page similar to the one attached using only HTML and CSS.-->
+<!--This shouldn't take more than an hour.-->
+<!--Ask for help if you didn't make much progress after 30mins.-->
+<!--2) Use JavaScript to make the button 1 and 2 count the relating number above it.-->
+<!--3) Make the middle area state who is in the lead. If the scores are the same, make it say "tie".-->
+<!--### Challenge-->
+<!--4) Make keyboard and mouse options. Disable and stop events from happening when the option is not chosen.-->
+<!--5) Toggle background colors on and off.-->
+<!--6) Once a player reaches 15, alert the winner and restart the game.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="frontend_halfday1.css">
+</head>
+<body id="container">
+
+<header>
+    <h2>This is the Clicking Challenge</h2>
+</header>
+
+<section id="player1">
+<p id="score1">0</p>
+    <button id="p1">P1</button>
+</section>
+<section id="player2">
+<p id="score2">0</p>
+    <button id="p2">P2</button>
+</section>
+<article>
+    <p><h4>In the lead:</h4></p>
+    <p id="leader"></p>
+</article>
+
+<section id="section1">
+    <p>Options</p>
+</section>
+<section id="section2">
+    <p>Play with:</p>
+    <button>Keyboard(Q&P)</button> <button>Mouse</button>
+</section>
+<section id="section3">
+    <p>Change Background Color</p>
+    <button id="red">Red</button> <button id="blue">Blue</button> <button id="yellow">Yellow</button>
+</section>
+
+<footer>
+    <p>Made by Joshua Graham</p>
+</footer>
+
+<script src="frontend_halfday1.js"></script>
+</body>
+</html>
